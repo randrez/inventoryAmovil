@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/hint_code_bar"
+        android:id="@+id/editText"
+        android:background="@drawable/border"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_below="@+id/textView_barras"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/code_bar"
+        android:id="@+id/textView_barras"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/code_product"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/hint_code_product"
+        android:id="@+id/editText2"
+        android:background="@drawable/border"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/code_bar"
+        android:layout_alignEnd="@+id/code_bar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:id="@+id/name_product"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="45dp"
+        android:hint="@string/hint_name_product"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/name_product"
+        android:id="@+id/textView3"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/name_product"
+        android:layout_alignStart="@+id/name_product" />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="14dp"
+        android:id="@+id/code_bar"
+        android:src="@drawable/code"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="9dp"
+        android:layout_alignTop="@+id/textView_barras"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+    <include
+        android:id="@+id/layout_number_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        layout="@layout/layout_number_picker"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/name_product"
+        android:layout_alignStart="@+id/name_product"
+        android:layout_alignRight="@+id/name_product"
+        android:layout_alignEnd="@+id/name_product" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/code_bar"
+        android:layout_alignEnd="@+id/code_bar"
+        android:layout_alignLeft="@+id/layout_number_picker"
+        android:layout_alignStart="@+id/layout_number_picker">
+        <Button
+            android:id="@+id/cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/pink"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/border_button_register"
+            android:layout_marginLeft="0dp"
+            android:layout_width="125dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/acept"
+            android:text="@string/acept"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@drawable/border_register_button_accept"
+            android:layout_marginLeft="23dp"
+            android:layout_width="125dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/units"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/name_product"
+        android:layout_alignLeft="@+id/layout_number_picker"
+        android:layout_alignStart="@+id/layout_number_picker"
+        android:layout_marginTop="29dp" />
+
+
+</RelativeLayout>

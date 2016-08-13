@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name_product"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
+        android:text="Name Product"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/units_product"
+        android:text="000000"
+        android:layout_below="@+id/name_product"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp" />
+
+    <TextView
+        android:id="@+id/unids"
+        android:textColor="@android:color/background_dark"
+        android:text="unid."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/units_product"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/code_product"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_alignRight="@+id/unids"
+        android:layout_alignEnd="@+id/unids" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NameProduct"
+        android:id="@+id/name_product_dialog"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cod. "
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/name_product_dialog"
+        android:layout_toRightOf="@+id/name_product_dialog"
+        android:layout_toEndOf="@+id/name_product_dialog"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/units_dialog"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/textView8"
+        android:layout_toStartOf="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="unid."
+        android:id="@+id/textView8"
+        android:layout_alignBaseline="@+id/units_dialog"
+        android:layout_alignBottom="@+id/units_dialog"
+        android:layout_alignRight="@+id/code_product_dialog"
+        android:layout_alignEnd="@+id/code_product_dialog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/code_product_dialog"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+</RelativeLayout>

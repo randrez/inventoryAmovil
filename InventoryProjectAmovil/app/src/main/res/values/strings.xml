@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">InventoryProjectAmovil</string>
+    <string name="slidingActivity">SlidingActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Roberto Gómez</string>
+    <string name="fact">Facturador</string>
+    <string name="register">Registro</string>
+    <string name="list_register">Lista de Registros</string>
+    <string name="update">Actualizar</string>
+    <string name="configuration">Configuración</string>
+    <string name="menu">Menú</string>
+    <string name="code_bar">Codigo de Barras</string>
+    <string name="code_product">Codigo del Producto</string>
+    <string name="name_product">Nombre del producto</string>
+    <string name="units">Unidades</string>
+    <string name="url">http://www.asistenciamovil.com:89/productos.php</string>
+    <string name="hint_code_bar">Ej:000 0000 0000</string>
+    <string name="hint_code_product">Ej:0000 0000 000</string>
+    <string name="hint_name_product">Ej:Soflán</string>
+    <string name="enter">Ingresar</string>
+    <string name="acept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="send">Enviar</string>
+    <string name="less">-</string>
+    <string name="more">+</string>
+    <string name="tittle_dialog">Producto Registrado</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_initial">InitialActivity</string>
+</resources>
